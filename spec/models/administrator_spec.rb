@@ -10,7 +10,7 @@ RSpec.describe Administrator, type: :model do
     end
 
     example "nilを与えると、hashed_passwordはnilになる" do
-      member = Administrator .new(hashed_password: "x")
+      member = Administrator.new(hashed_password: "x")
       member.password = nil
       expect(member.hashed_password).to be_nil
     end
