@@ -14,28 +14,37 @@ div#wrapper {
       form {
         div {
           padding: $wide;
+
           label {
             display: block;
             padding: $moderate 0;
           }
+
           label.required:after {
             content: "*";
             padding-left: $narrow;
             color: $red;
           }
         }
+
         div.notes {
           text-align: right;
           font-size: $small;
-          span.mark { color: $red }
+
+          span.mark {
+            color: $red
+          }
         }
+
         div.check-boxes, div.radio-buttons {
           label {
             display: inline-block;
           }
         }
+
         div.buttons {
           text-align: center;
+
           input[type="submit"] {
             padding: $wide $wide * 2;
           }
