@@ -4,9 +4,12 @@ Rails.application.configure do
 
     action =
       case request.path_info
-      when "/404"; :not_found
-      when "/422"; :unprocessable_entity
-      else; :internal_server_error
+      when "/404";
+        :not_found
+      when "/422";
+        :unprocessable_entity
+      else
+        ; :internal_server_error
       end
 
     ErrorsController.action(action).call(env)
