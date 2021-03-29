@@ -12,7 +12,7 @@ div.table-wrapper {
 
   table {
     margin: $moderate auto 0;
-    border: solid $moderate $very_dark_magenta;
+    border: solid $moderate $very_dark_cyan;
 
     tr {
       th {
@@ -25,11 +25,11 @@ div.table-wrapper {
       }
 
       td.email, td.date {
-        font-family: monospace;
+        font-family: monospace
       }
 
       td.boolean {
-        text-align: center;
+        text-align: center
       }
 
       td.actions {
@@ -43,11 +43,24 @@ div.table-wrapper {
     width: 100%;
 
     tr:nth-child(even) {
-      background-color: $very_light_gray
+      background-color: $very_light_gray;
     }
 
     tr:nth-child(odd) {
-      background-color: $light_gray
+      background-color: $light_gray;
+    }
+  }
+
+  table.attributes {
+    width: 100%;
+
+    th {
+      padding-right: $moderate;
+      width: 200px;
+    }
+
+    td {
+      background-color: $very_light_gray
     }
   }
 }
